@@ -96,7 +96,7 @@ resource "null_resource" "install_nixos" {
     command = <<-EOT
       nix run github:nix-community/nixos-anywhere -- \
         --flake '${var.nixos_flake_ref}' \
-        root@${aws_eip.desktop.public_ip}
+        ubuntu@${aws_eip.desktop.public_ip}
     EOT
   }
 }

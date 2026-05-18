@@ -25,7 +25,7 @@ variable "ssh_public_key" {
 
 variable "nixos_flake_ref" {
   description = "Nix flake reference for nixos-anywhere to install"
-  default     = "github:phillip-stephens/opentofu-nixos?dir=nix-os#cloud-desktop"
+  default     = "github:phillip-stephens/opentofu-nixos?dir=nix-os#default"
 }
 
 variable "tailscale_auth_key" {

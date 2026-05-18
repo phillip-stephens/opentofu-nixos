@@ -6,9 +6,14 @@
       content = {
         type = "gpt";
         partitions = {
-          boot = {
-            size = "1M";
-            type = "EF02";
+          ESP = {
+            size = "512M";
+            type = "EF00";
+            content = {
+              type = "filesystem";
+              format = "vfat";
+              mountpoint = "/boot";
+            };
           };
           root = {
             size = "100%";
@@ -23,6 +28,6 @@
     };
   };
 
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/nvme0n1";
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 }
