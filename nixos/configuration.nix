@@ -27,6 +27,13 @@
 
   systemd.services.amazon-init.enable = false; 
 
+programs.git = {
+  enable = true;
+  config = {
+    user.name = "Phillip Stephens";
+    user.email = "phillip@cs.stanford.edu";
+  };
+};
   # ── State version (do not change after first deploy) ──────────────────────
   system.stateVersion = "25.11";
 }
