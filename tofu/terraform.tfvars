@@ -1,0 +1,16 @@
+# Copy this file to terraform.tfvars and fill in your values.
+# terraform.tfvars is gitignored so secrets stay local.
+
+aws_region    = "ap-southeast-2"
+name          = "nixos-dev"
+instance_type = "m8g.xlarge"
+
+# Paste your SSH public key here (e.g. contents of ~/.ssh/id_ed25519.pub)
+ssh_public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICFKKfkv3C6sDntua03IdR1jBxxvFSyfmq7MAPJ9i+rV stanford"
+
+# Restrict SSH to your own IP for security:
+# ssh_allowed_cidrs = ["203.0.113.42/32"]
+ssh_allowed_cidrs = ["0.0.0.0/0"]
+
+root_volume_gb = 20
+data_volume_gb = 30

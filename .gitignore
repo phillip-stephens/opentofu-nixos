@@ -1,0 +1,15 @@
+# OpenTofu / Terraform state & secrets
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+tfplan
+.terraform.lock.hcl
+terraform.tfvars      # contains your SSH key — never commit this
+
+# Editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+.envrc
