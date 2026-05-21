@@ -6,7 +6,6 @@
   home.stateVersion = "25.11";
 
   home.packages = with pkgs; [
-    papirus-icon-theme
     bibata-cursors
     libsForQt5.qtstyleplugin-kvantum
     kdePackages.qtsvg
