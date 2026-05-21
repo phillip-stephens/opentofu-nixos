@@ -6,6 +6,7 @@
     isNormalUser   = true;
     description    = "Admin user";
     extraGroups    = [ "wheel" "users" ];
+    hashedPassword = "$y$jET$QcWV8oAQwO/yiqAwq3c5P0$mhPj4OSmwctn392Z3nACjcJkY5KxlhbrqPePDm1HtvB";
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICFKKfkv3C6sDntua03IdR1jBxxvFSyfmq7MAPJ9i+rV stanford"
     ];

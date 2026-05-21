@@ -18,8 +18,6 @@
   programs.plasma = {
     enable = true;
 
-    colorSchemes = [ "CatppuccinMochaBlue" ];  # after installing the theme
-
     workspace = {
       colorScheme = "CatppuccinMochaBlue";
       cursorTheme = "Bibata-Modern-Classic";
